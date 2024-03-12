@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+        header, nav, section, footer {
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+        }
+        section {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .menu {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu li {
+            margin-bottom: 10px;
+        }
+        .menu li a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .menu li a:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Image Links</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our website! Here's an image related to technology:</p>
+        <a href=""><img src="techimage.jpeg" alt="Technology"></a>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <a href=""><img src="mountain.webp" alt="mountain"></a>
+            <a href=""><img src="river.jpg" alt="river"></a>
+            <a href=""><img src="tree.jpeg" alt="tree"></a>
+        </div>
+    </section>
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul class="menu">
+            <li><a href=""><img src="pizza.jpeg" alt="pizza"> pizza</a></li>
+            <li><a href=""><img src="pasta.jpeg" alt="pasta"> pasta</a></li>
+            <li><a href=""><img src="pilau.jpeg" alt="pilau"> pilau</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 Image Links. All rights reserved.</p>
+    </footer>
+</body>
+</html>
